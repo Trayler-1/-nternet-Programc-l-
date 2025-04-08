@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çalışma</title>
+    <script>
+    function fonksiyonbir() {
+        document.getElementById("fonksiyonbir").innerHTML = "Fonksiyon Çağırıldı";
+    }
+    </script>
+</head>
+<body>
+    <h1>Java Script Neler Yapabilir?</h1>
+    <h2 id="deneme">1-Html yazılarını değiştirebilir.</h2>
+    <button type="button" onclick="document.getElementById('deneme').innerHTML = 'Merhaba Java Script'">Değiştir</button>
+
+    <h2>HTML'in Öznitelik Değerlerini Değiştirebilir.</h2>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+    <h2>2-Html Stillerini Değiştirebilir</h2>
+    <p id="stil">JavaScript HTML Stillerini Değiştirebilir</p>
+    <button type="button" onclick="document.getElementById('stil').style.fontSize='25px'">Boyut Değiştir</button>
+
+    <h2>3-HTML Öğelerini Gizliyebilir</h2>
+    <p id="gizle">JavaScript Öğeleri Gizliyebilir</p>
+    <button type="button" onclick="document.getElementById('gizle').style.display='none'">Gİzlemek İçin Bas</button>
+
+    <h2>4-Html Öğelerini Gösterebilir</h2>
+    <p>JavaScript Öğeleri Gösterebilir</p>
+    <p id="göster" style="display: none;">Merhaba JavaScript</p>
+    <button type="button" onclick="document.getElementById('göster').style.display='block'">Göstermek İçin Bas</button>
+
+    <h2>Head Ve Body İçinde JavaScript</h2> <!--Zaten ikisde aynı olduğu için yazmadım sadece biri heade biri body e yazılıyor bu kadar.  -->
+    <p id="fonksiyonbir">Lorem, ipsum dolor.</p>
+    <button type="button" onclick="fonksiyonbir()">Fonksiyonu Çağır</button>
+
+    <h2>Harici JavaScript</h2>
+    <p id="harici">Bir Paragraf.</p>
+
+    <button type="button" onclick="fonksiyoniki()">Dene</button>
+
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <script src="serbest.js"></script>
+
+</body>
+</html>
